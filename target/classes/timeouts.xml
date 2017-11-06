@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:component-scan base-package="infra.parallel.core.webdriver.browserbot"/>
+	
+	<bean id="chromebot" class="infra.parallel.configuration.DefaultTimeout">
+		<property name="pageLoad" value="220"/>
+		<property name="getElement" value="60"/>
+		<property name="isDisplayed" value="60"/>
+		<property name="isEnabled" value="60"/>
+		<property name="click" value="60"/>
+		<property name="clickElement" value="60"/>
+		<property name="type" value="60"/>
+		<property name="refresh" value="60"/>
+		<property name="wait" value="60"/>
+		<property name="waitForExpCondition" value="60"/>
+		<property name="getInnerHtml" value="60"/>
+		<property name="getOuterHtml" value="60"/>
+		<property name="clickDropDown" value="60"/>
+		<property name="upLoadFile" value="60"/>
+		<property name="exists" value="60"/>
+		<property name="getAttribute" value="60"/>
+		<property name="getText" value="60"/>
+		<property name="waitPollingInterval" value="60"/>	
+	</bean>
+
+	
+</beans>

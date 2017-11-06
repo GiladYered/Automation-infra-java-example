@@ -1,0 +1,181 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>il.co.top-q</groupId>
+	<artifactId>Automation-infra</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<developers>
+		<developer>
+			<name>Ben Mark</name>
+			<email>benma@top-q.co.il</email>
+		</developer>
+	</developers>
+	<properties>
+		<java-version>1.8</java-version>
+		<org.aspectj-version>1.7.3</org.aspectj-version>
+		<difido.version>2.1.01-SNAPSHOT</difido.version>
+		<topq.repository.rootUrl>http://maven.top-q.co.il</topq.repository.rootUrl>
+		<spring.version>5.0.1.RELEASE</spring.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jayway.awaitility</groupId>
+			<artifactId>awaitility</artifactId>
+			<version>1.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>il.co.topq.difido</groupId>
+			<artifactId>difido-testng</artifactId>
+			<version>${difido.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<scope>provided</scope>
+			<version>6.11</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-util</artifactId>
+			<version>9.2.2.v20140723</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-text</artifactId>
+			<version>1.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.5.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>0.11.6</version>
+			<scope>provided</scope>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<plugins>
+			<!-- this is for replacing the Lombok annotations with equivalent source 
+				code -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.6.0</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+					<annotationProcessorPaths>
+						<path>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+							<version>1.16.12</version>
+						</path>
+					</annotationProcessorPaths>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>install</id>
+						<phase>install</phase>
+						<goals>
+							<goal>sources</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.12</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.surefire</groupId>
+						<artifactId>surefire-testng</artifactId>
+						<version>2.12</version>
+						<exclusions>
+							<exclusion>
+								<groupId>org.testng</groupId>
+								<artifactId>testng</artifactId>
+							</exclusion>
+						</exclusions>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<properties>
+						<property>
+							<name>usedefaultlisteners</name>
+							<value>false</value>
+						</property>
+					</properties>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<workingDirectory></workingDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<!-- We don't want to fail the build in test failures since the example 
+								includes test failures -->
+							<!-- >goal>verify</goal -->
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<!-- We don't want surefire to run the tests, instead we want failsafe 
+					to do it -->
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.12.4</version>
+				<configuration>
+					<skipTests>true</skipTests>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>topq</id>
+			<url>${topq.repository.rootUrl}/content/groups/public</url>
+		</repository>
+	</repositories>
+
+</project>

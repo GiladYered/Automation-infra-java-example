@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="10" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Difido Parallel DataDriven example" duration-ms="740" started-at="2017-11-06T12:51:11Z" finished-at="2017-11-06T12:51:11Z">
+    <groups>
+      <group name="Sanity">
+        <method signature="DataDrivenTest.drivenTestMethod(infra.core.objectmodels.Iteration)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" name="drivenTestMethod" class="sanity.DataDrivenTest"/>
+        <method signature="SimpleTests.simpleTest()[pri:0, instance:sanity.SimpleTests@1f36e637]" name="simpleTest" class="sanity.SimpleTests"/>
+        <method signature="SimpleTests.simpleTest2()[pri:0, instance:sanity.SimpleTests@1f36e637]" name="simpleTest2" class="sanity.SimpleTests"/>
+      </group> <!-- Sanity -->
+    </groups>
+    <test name="Wave 1" duration-ms="740" started-at="2017-11-06T12:51:11Z" finished-at="2017-11-06T12:51:11Z">
+      <class name="sanity.DataDrivenTest">
+        <test-method status="PASS" signature="suitePreConfigure(org.testng.ITestContext)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="suitePreConfigure" is-config="true" duration-ms="125" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4f80542f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suitePreConfigure -->
+        <test-method status="PASS" signature="setMethodName(java.lang.reflect.Method)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setMethodName" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.DataDrivenTest.drivenTestMethod(infra.core.objectmodels.Iteration) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodName -->
+        <test-method status="PASS" signature="setUp([Ljava.lang.Object;)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setUp" is-config="true" duration-ms="15" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@60bd273d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="drivenTestMethod(infra.core.objectmodels.Iteration)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="drivenTestMethod" duration-ms="84" started-at="2017-11-06T14:51:11Z" data-provider="ParallelDataProvider" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arg0  arg1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drivenTestMethod -->
+        <test-method status="PASS" signature="setMethodName(java.lang.reflect.Method)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setMethodName" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.DataDrivenTest.drivenTestMethod(infra.core.objectmodels.Iteration) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodName -->
+        <test-method status="PASS" signature="setUp([Ljava.lang.Object;)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setUp" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@121314f7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="drivenTestMethod(infra.core.objectmodels.Iteration)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="drivenTestMethod" duration-ms="47" started-at="2017-11-06T14:51:11Z" data-provider="ParallelDataProvider" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arg2  arg3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drivenTestMethod -->
+        <test-method status="PASS" signature="setUp([Ljava.lang.Object;)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setUp" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@130c12b7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="drivenTestMethod(infra.core.objectmodels.Iteration)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="drivenTestMethod" duration-ms="78" started-at="2017-11-06T14:51:11Z" data-provider="ParallelDataProvider" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arg4  arg5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drivenTestMethod -->
+        <test-method status="PASS" signature="setMethodName(java.lang.reflect.Method)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setMethodName" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.DataDrivenTest.drivenTestMethod(infra.core.objectmodels.Iteration) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodName -->
+        <test-method status="PASS" signature="drivenTestMethod(infra.core.objectmodels.Iteration)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="drivenTestMethod" duration-ms="46" started-at="2017-11-06T14:51:11Z" data-provider="ParallelDataProvider" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arg6  arg7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drivenTestMethod -->
+        <test-method status="PASS" signature="setMethodName(java.lang.reflect.Method)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setMethodName" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.DataDrivenTest.drivenTestMethod(infra.core.objectmodels.Iteration) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodName -->
+        <test-method status="PASS" signature="setUp([Ljava.lang.Object;)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setUp" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5e600dd5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setMethodName(java.lang.reflect.Method)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setMethodName" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.DataDrivenTest.drivenTestMethod(infra.core.objectmodels.Iteration) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodName -->
+        <test-method status="PASS" signature="drivenTestMethod(infra.core.objectmodels.Iteration)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="drivenTestMethod" duration-ms="63" started-at="2017-11-06T14:51:11Z" data-provider="ParallelDataProvider" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arg8  arg9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drivenTestMethod -->
+        <test-method status="PASS" signature="setUp([Ljava.lang.Object;)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setUp" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@576d5deb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp([Ljava.lang.Object;)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setUp" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5d534f5d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setMethodName(java.lang.reflect.Method)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setMethodName" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.DataDrivenTest.drivenTestMethod(infra.core.objectmodels.Iteration) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodName -->
+        <test-method status="PASS" signature="drivenTestMethod(infra.core.objectmodels.Iteration)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="drivenTestMethod" duration-ms="63" started-at="2017-11-06T14:51:11Z" data-provider="ParallelDataProvider" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arg10  arg11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drivenTestMethod -->
+        <test-method status="PASS" signature="setMethodName(java.lang.reflect.Method)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setMethodName" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.DataDrivenTest.drivenTestMethod(infra.core.objectmodels.Iteration) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodName -->
+        <test-method status="PASS" signature="drivenTestMethod(infra.core.objectmodels.Iteration)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="drivenTestMethod" duration-ms="63" started-at="2017-11-06T14:51:11Z" data-provider="ParallelDataProvider" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arg12  arg13]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drivenTestMethod -->
+        <test-method status="PASS" signature="setUp([Ljava.lang.Object;)[pri:0, instance:sanity.DataDrivenTest@2758fe70]" test-instance-name="arg12  arg13" name="setUp" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2e3967ea]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- sanity.DataDrivenTest -->
+      <class name="sanity.SimpleTests">
+        <test-method status="PASS" signature="simpleTest()[pri:0, instance:sanity.SimpleTests@1f36e637]" test-instance-name="simpleTest2" name="simpleTest" duration-ms="63" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest -->
+        <test-method status="PASS" signature="setMethodName(java.lang.reflect.Method)[pri:0, instance:sanity.SimpleTests@1f36e637]" test-instance-name="simpleTest2" name="setMethodName" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SimpleTests.simpleTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodName -->
+        <test-method status="PASS" signature="setUp([Ljava.lang.Object;)[pri:0, instance:sanity.SimpleTests@1f36e637]" test-instance-name="simpleTest2" name="setUp" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2794eab6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="simpleTest2()[pri:0, instance:sanity.SimpleTests@1f36e637]" test-instance-name="simpleTest2" name="simpleTest2" duration-ms="62" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest2 -->
+        <test-method status="PASS" signature="setMethodName(java.lang.reflect.Method)[pri:0, instance:sanity.SimpleTests@1f36e637]" test-instance-name="simpleTest2" name="setMethodName" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SimpleTests.simpleTest2()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodName -->
+        <test-method status="PASS" signature="setUp([Ljava.lang.Object;)[pri:0, instance:sanity.SimpleTests@1f36e637]" test-instance-name="simpleTest2" name="setUp" is-config="true" duration-ms="0" started-at="2017-11-06T14:51:11Z" finished-at="2017-11-06T14:51:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6340e5f0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- sanity.SimpleTests -->
+    </test> <!-- Wave 1 -->
+  </suite> <!-- Difido Parallel DataDriven example -->
+</testng-results>

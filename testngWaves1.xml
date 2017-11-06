@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Difido Parallel DataDriven example" verbose="1"
+	preserve-order="true" >
+
+	<test name="Wave 1" parallel="false">
+		
+		<groups>
+			<run>
+				<include name="Sanity"></include>
+			</run>
+		</groups>
+		
+		<packages>
+			<package name="sanity"></package>
+		</packages>
+		
+	</test>
+
+</suite>

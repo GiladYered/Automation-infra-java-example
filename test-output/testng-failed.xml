@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Difido Parallel DataDriven example]">
+  <test name="Wave 1(failed)">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="sanity.DataDrivenTest">
+        <methods>
+          <include name="suitePreConfigure"/>
+          <include name="setMethodName"/>
+          <include name="setUp"/>
+          <include name="drivenTestMethod"/>
+        </methods>
+      </class> <!-- sanity.DataDrivenTest -->
+    </classes>
+  </test> <!-- Wave 1(failed) -->
+</suite> <!-- Failed suite [Difido Parallel DataDriven example] -->

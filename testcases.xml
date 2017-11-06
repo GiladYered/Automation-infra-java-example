@@ -1,0 +1,37 @@
+<!DOCTYPE scenarios [
+ <!ENTITY Sut1 "LinuxMachine">
+  <!ENTITY Sut2 "WindowsMachine">
+]>
+
+<scenarios>
+	
+	<testclass name="DataDrivenTest">
+
+		<testmethod name="drivenTestMethod">
+			<sut name="&Sut1;">
+				<iteration param1="arg0" param2="arg1"></iteration>
+				<iteration param1="arg2" param2="arg3"></iteration>
+				<iteration param1="arg4" param2="arg5"></iteration>
+				<iteration param1="arg6" param2="arg7"></iteration>
+				<iteration param1="arg8" param2="arg9"></iteration>
+				<iteration param1="arg10" param2="arg11"></iteration>
+				<iteration param1="arg12" param2="arg13"></iteration>
+			</sut>
+		</testmethod>
+
+	</testclass>
+	
+	<testclass name="DataDrivenTest2">
+	<testmethod name="drivenTestMethod2">
+			<sut name="&Sut1;">
+				<iteration param1="arg0" param2="arg1"></iteration>
+				<iteration param1="arg2" param2="arg3"></iteration>
+				<iteration param1="arg4" param2="arg5"></iteration>
+				<iteration param1="arg6" param2="arg7"></iteration>
+				<iteration param1="arg8" param2="arg9"></iteration>
+				<iteration param1="arg10" param2="arg11"></iteration>
+				<iteration param1="arg12" param2="arg13"></iteration>
+			</sut>
+		</testmethod>
+	</testclass>
+</scenarios>
